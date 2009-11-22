@@ -38,7 +38,7 @@ class Player(object):
 
     @property
     def paused(self):
-        return self.STATE_PAUSED in self.p.get_state()[1:]
+        return gst.STATE_PAUSED in self.p.get_state()[1:]
 
     def pause(self):
         """ Toggles pause mode """
