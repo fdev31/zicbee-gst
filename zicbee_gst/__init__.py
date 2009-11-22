@@ -31,7 +31,7 @@ class Player(object):
         if self.p:
             pos = self._nano_pos + long(val)*1000000000
 
-        self.p.seek(1.0, gst.FORMAT_TIME,
+            self.p.seek(1.0, gst.FORMAT_TIME,
                  gst.SEEK_FLAG_FLUSH | gst.SEEK_FLAG_ACCURATE,
                  gst.SEEK_TYPE_SET, pos,
                  gst.SEEK_TYPE_NONE, 0)
