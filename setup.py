@@ -21,7 +21,7 @@ setup (
         download_url='http://zicbee.gnux.info/hg/index.cgi/zicbee-gst/archive/%s.tar.bz2'%VERSION,
         license='BSD',
         platform='all',
-        description='VLC backend for zicbee project',
+        description='Gstreamer backend for zicbee project',
         long_description='''Allow zicbee to use gstreamer for playback''',
         keywords = 'database music tags metadata management',
         packages = find_packages(),
