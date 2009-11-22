@@ -54,11 +54,8 @@ class Player(object):
             self.p.set_state(gst.STATE_READY)
         self.p = gst.element_factory_make("playbin", "player")
         self.bus = self.p.get_bus()
-        self.bus.connect('message', self._reg)
+        self.bus.connect('message', self.on_message)
         self.bus.add_signal_watch()
-
-    def _reg(self, *args, **kw):
-        import pdb; pdb.set_trace()
 
     def on_message(self, bus, message):
         t = message.type
