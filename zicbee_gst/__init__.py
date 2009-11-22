@@ -24,7 +24,7 @@ class Player(object):
 
     def volume(self, val):
         """ Sets volume [0-100] """
-        self.p.set_volume(val*10.0)
+        self.p.props.volume = val*10.0
 
     def seek(self, val):
         """ Seeks specified number of seconds (positive or negative) """
