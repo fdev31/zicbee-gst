@@ -89,6 +89,8 @@ class Player(object):
                 self.p = None
             except Exception, e:
                 print "E: %s"%e
+            finally:
+                gobject.MainLoop().quit()
 
     @property
     def position(self):
