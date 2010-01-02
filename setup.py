@@ -28,7 +28,7 @@ setup (
 
         entry_points = """
         [zicbee.player]
-        gst = zicbee_gst:Player
+        gst = zicbee_gst.core:Player
         """,
 
         dependency_links = [
