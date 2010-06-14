@@ -18,7 +18,7 @@ setup (
         author='Fabien Devaux',
         author_email='fdev31@gmail.com',
         url = 'http://zicbee.gnux.info/',
-        download_url='http://zicbee.gnux.info/hg/index.cgi/zicbee-gst/archive/%s.tar.bz2'%VERSION,
+        download_url='http://zicbee.gnux.info/hg/zicbee-gst/archive/%s.tar.bz2'%VERSION,
         license='BSD',
         platform='all',
         description='Gstreamer backend for zicbee project',
